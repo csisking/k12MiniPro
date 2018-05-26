@@ -1,0 +1,38 @@
+# 开发测试输出文件夹，ignore
+
+# Node.js artifacts
+
+npm-debug.log
+
+node_modules
+
+#sass watch
+.sass-cache/
+
+# Mac files
+.DS_Store
+
+# IntelliJ files
+*.iml
+.idea/
+*.ipr
+*.iws
+nei.*
+.vscode/
+
+# 打包
+*.map
+*.log
+deploy/**/*.js
+deploy/**/*.json
+mock/
+
+/src/**/css
+/src/wap/javascript/ui/**/*.css
+/pub/
+/lib/
+/mcss.json
+/res/nej_blank.gif
+
+.vscode
+.history

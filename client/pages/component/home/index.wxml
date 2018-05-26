@@ -1,0 +1,6 @@
+
+<view id="header" class="tab">
+  <navigator url="../search/index" class="tab-item" id="lastsearch">
+    <icon type="search" size="18" color="#666" />
+  </navigator>
+</view>
