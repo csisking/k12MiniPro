@@ -2,37 +2,21 @@ var bsurl = require('../../../utils/bsurl.js');
 var app = getApp();
 Page({
     data: {
-        rec: {
-            idx: 0, loading: false,
-        },
-        music: {},
-        playing: false,
-        playtype: {},
-        banner: [4],
-        thisday: (new Date()).getDate(),
-        cateisShow: false,
-        playlist: {
-            idx: 1, loading: false,
-            list: {},
-            offset: 0,
-            limit: 20
-        },
-        catelist: {
-            res: {},
-            checked: {}
-        },
-        djlist: {
-            idx: 2, loading: false,
-            list: [],
-            offset: 0,
-            limit: 20
-        },
-        djcate: { loading: false },
-        djrecs: {},
-        sort: {
-            idx: 3, loading: false
-        },
-        tabidx: 0
+        banner:[{
+            id:1,
+            src: '//edu-image.nosdn.127.net/881a9c08-b432-4d2a-bd50-b049cebc46ce.jpg?imageView&quality=100',
+            href: '//kada.163.com',
+            target:'_self',
+            text: '',
+            bgColor: '#418eea'
+        },{
+        id:2,
+        src: '//edu-image.nosdn.127.net/881a9c08-b432-4d2a-bd50-b049cebc46ce.jpg?imageView&quality=100',
+        href: '//kada.163.com',
+        target:'_self',
+        text: '',
+        bgColor: '#418eea'
+    }]
     },
     
     onLoad: function (options) {

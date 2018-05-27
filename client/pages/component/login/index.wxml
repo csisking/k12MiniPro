@@ -1,0 +1,10 @@
+<import src="../../../utils/pl.wxml" />
+<import src="../../../utils/image.wxml" />
+<view>
+  <view class="mylearn">
+    <view class="mylearn-banner">
+       <image class="mylearn-cover" src="{{cover}}" />
+    </view>
+  </view>
+  
+</view>

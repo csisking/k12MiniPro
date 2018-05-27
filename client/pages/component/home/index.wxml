@@ -1,6 +1,35 @@
+<view class="ui-index-page ">
+  <view class="index-banner">
+    <swiper indicator-dots="true" autoplay="true" circular="true">
+      <swiper-item wx:for-items="{{banner}}" wx:key="{{item.id}}">
+        <image src="{{item.src}}" class="slide-image" width="750" height="290" />
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="index-recommend">
+    <view class="content-in">
+      <view class="card card1">
+        <view class="card-content">
+            <view class="content1">趣味创意编程(Scratch)</view>
+            <view class="content2">积木式编程，思维培养</view>
+        </view>
+        <view class="card-action">
+            <button class="card-action_btn free-try" bindtap="onRecommendBtnClick('scratchTry')">免费试听</button>
+            <button class="card-action_btn go-buy" bindtap="onRecommendBtnClick('scratchBuy')">立即购买</button>
+        </view>
+      </view>
 
-<view id="header" class="tab">
-  <navigator url="../search/index" class="tab-item" id="lastsearch">
-    <icon type="search" size="18" color="#666" />
-  </navigator>
+      <view class="card card2">
+        <view class="card-content">
+            <view class="content1">游戏化代码编程(Python)</view>
+            <view class="content2">代码、算法，边玩边学</view>
+        </view>
+        <view class="card-action">
+            <button class="card-action_btn free-try" bindtap="onRecommendBtnClick('scratchTry')">免费试听</button>
+            <button class="card-action_btn go-buy" bindtap="onRecommendBtnClick('scratchBuy')">立即购买</button>
+        </view>
+      </view>
+    </view>
+    
+  </view>
 </view>

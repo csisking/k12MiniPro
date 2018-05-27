@@ -3,7 +3,9 @@
     "pages/component/home/index",
     "pages/index/index",
     "pages/addCgi/addCgi",
-    "pages/component/me/index"
+    "pages/component/me/index",
+    "pages/component/mylearn/index",
+    "pages/component/login/index"
   ],
   "window":{
     "backgroundColor":"#F6F6F6",
@@ -20,15 +22,15 @@
     "list": [
       {
         "pagePath": "pages/component/home/index",
-        "text": "发现音乐"
-      },
-      {
-        "pagePath": "pages/index/index",
         "text": "首页"
       },
       {
+        "pagePath": "pages/index/index",
+        "text": "首"
+      },
+      {
         "pagePath": "pages/component/me/index",
-        "text": "我的音乐"
+        "text": "个人中心"
       }
     ]
   },

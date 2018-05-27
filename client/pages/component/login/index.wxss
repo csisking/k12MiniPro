@@ -1,0 +1,13 @@
+.mylearn {
+  position: relative;
+}
+.mylearn .mylearn-banner {
+  width: 100%;
+  height: 380rpx;
+  position: relative;
+  margin-bottom: 10rpx;
+}
+.mylearn .mylearn-banner image {
+  width: 100%;
+  height: 100%;
+}

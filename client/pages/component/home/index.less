@@ -1,0 +1,86 @@
+.ui-index-page{
+	.content-in {
+        width: 690rpx;
+        margin: 30rpx auto;
+	}
+	
+	.index-banner{
+		swiper{
+			width: 750rpx;
+			height:290rpx;
+			image{
+				width: 750rpx;
+				height:290rpx;
+			}
+		}
+	
+	}
+	
+	.index-recommend{
+		display: flex; 
+		text-align: center;
+		width: 100%;
+		border-bottom: 1rpx solid #eee;
+		view{
+			//flex: 1;
+			position: relative
+		}
+		.card{
+			float: left;
+			width: 340rpx;
+			height: 482rpx;
+			padding: 56rpx 44rpx 73rpx;
+			box-sizing: border-box;
+			color: #fff;
+		}
+	
+		.card1 {
+			background: url("http://mgc.stu.126.net/res/img/page/index/recommend1.png?e25eed2e6b79b912401abb6ac5a14bc1") no-repeat;
+			background-size: 340rpx 482rpx;
+			//margin-left: 70px;
+		}
+		.card2 {
+			background: url("http://mgc.stu.126.net/res/img/page/index/recommend2.png?01b3952628098f092552e669597d2123") no-repeat;
+			background-size: 340rpx 482rpx;
+			.card-action{
+				.free-try{
+					color: #2BB3D1;
+				}
+			}
+		}
+
+		.card-content{
+			.content1 {
+				font-size: 34rpx;
+				line-height: 1.4em;
+			}
+			.content2 {
+				margin-top: 15rpx;
+				font-size: 18rpx;
+				filter: Alpha(Opacity=80);
+				opacity: 0.8;
+			}
+		}
+
+		.card-action {
+			margin-top: 90rpx;
+			&_btn {
+				border-radius: 54rpx;
+				border:solid 1px rgba(255,255,255,0.6);
+				width: 252rpx;
+				height: 54rpx;
+				line-height: 54rpx;
+				background: none;
+				color: #fff;
+			}
+			.free-try{
+				background: #fff;
+				color: #4748FF;
+			}
+			.go-buy{
+				margin-top: 18rpx;
+
+			}
+		}
+	}
+}

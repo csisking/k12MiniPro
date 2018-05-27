@@ -1,0 +1,32 @@
+<import src="../../../utils/loading.wxml" />
+<import src="../../../utils/image.wxml" />
+<view>
+  <view class="mylearn">
+    <view class="mylearn-banner">
+       <image class="mylearn-cover" src="{{cover}}" />
+    </view>
+
+    <!--学习列表 -->
+    <view>
+   
+      <block wx:if="{{playlist.loading}}">
+        <view class='flex-boxlist flex-two'>
+          <view class="tl_cnt cateplaylist" wx:for-items="{{playlist.list.playlists}}" wx:key="{{item.id}}">
+            <navigator url="../playlist/index?pid={{item.id}}&from=toplist">
+              <view class="cover">
+                <image src="{{item.coverImgUrl}}?param=200y200" class="music_cover" />
+                <view class="img_creator">
+                  <template is="image" data="{{src:'../../../image/cm2_icn_userhead@2x.png',width:24}}" /> {{item.creator.nickname}}</view>
+                <view class="img_playcount">
+                  <image src="../../../image/p0.png" />{{item.playCount}}</view>
+              </view>
+              <text class="name">{{item.name}}</text>
+            </navigator>
+          </view>
+        </view>
+      </block>
+      <template wx:if="{{!playlist.loading||playlist.list.more}}" is="loading" />
+    </view>
+  </view>
+  
+</view>
